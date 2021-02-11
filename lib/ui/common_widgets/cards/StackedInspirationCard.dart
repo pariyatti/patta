@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:patta/local_database/database.dart';
 import 'package:patta/resources/strings.dart';
 import 'package:patta/ui/common_widgets/bookmark_button.dart';
+import 'package:patta/ui/common_widgets/pariyatti_icons.dart';
 import 'package:patta/ui/common_widgets/share_button.dart';
 import 'package:patta/ui/model/StackedInspirationCardModel.dart';
 import 'package:patta/util.dart';
@@ -89,7 +90,7 @@ class StackedInspirationCard extends StatelessWidget {
                         padding: const EdgeInsets.all(8.0),
                         child: Center(
                           child: Icon(
-                            Icons.error,
+                            PariyattiIcons.get(IconName.error),
                             color: Color(0xff6d695f),
                           ),
                         ),
